@@ -14,17 +14,9 @@ function App() {
   }, []);
   return (
     <main>
-      <h1>Create React App + Go API</h1>
+      <h1>RONA IS A CUTE DUMPLING~</h1>
       <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
+        DAYLEN IS CUTEEEE!
       </h2>
       <p>
         <a

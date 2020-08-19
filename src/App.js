@@ -5,7 +5,14 @@ import about from './Components/about';
 import contact from './Components/contact';
 import resume from './Components/resume';
 
-class App extends Component{
+// async function getDate(reference) {
+//   const res = await fetch('/api/date');
+//   const newDate = await res.text();
+//   reference.setState({date:newDate});
+// }
+
+
+class App extends React.Component{
 
     constructor(props){
       console.log(this)
@@ -17,14 +24,11 @@ class App extends Component{
       }
   };
 
-  getDate() {
+  async componentDidMount() {
     const res = await fetch('/api/date');
     const newDate = await res.text();
+    // getDate(this);
     this.setState({date:newDate});
-  }
-
-  componentDidMount() {
-    getDate();
   }
 
   render(){

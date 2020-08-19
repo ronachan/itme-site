@@ -62,7 +62,7 @@ class App extends React.Component{
         </p>
         <br />
         <h2>The date according to Go is:</h2>
-        <p>{date ? date : 'Loading date...'}</p>
+        <p>{this.state.date ? this.state.date : 'Loading date...'}</p>
       </main>
     )
   }
